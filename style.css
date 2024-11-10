@@ -21,16 +21,60 @@ img {
   filter: invert(100%);
 }
 
-/* night mode??
-.container {
-  color: black !important;
-  background: white !important;
-  filter: invert(1);
+
+/* (test)body {
+  font-family: "Arvo", serif;
+  background-color: black;
+  color: white;
 }
 
-.container > .image {
-  filter: invert(1) hue-rotate(180deg)
-}     */
+
+.dark-mode a {
+  color: white;
+}
+.dark-mode .container,
+.dark-mode .details-container,
+.dark-mode .menu-links {
+  background-color: black;
+  color: white;
+  border-color: rgb(163, 163, 163);
+}
+
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode a {
+  color: black;
+}
+
+.light-mode .container,
+.light-mode .details-container,
+.light-mode .menu-links {
+  background-color: white;
+  color: black;
+  border-color: rgb(53, 53, 53);
+}
+
+
+.btn-color-1, .btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.light-mode .btn-color-1, .light-mode .btn-color-2 {
+  background: black;
+  color: white;
+  border: rgb(163, 163, 163) 0.1rem solid;
+}
+
+.dark-mode .btn-color-1, .dark-mode .btn-color-2 {
+  background: white;
+  color: black;
+  border: rgb(163, 163, 163) 0.1rem solid;
+}
+ */
 
 html {
   scroll-behavior: smooth;
@@ -331,7 +375,7 @@ section {
 
 .section__pic-container {
   height: 400px;
-  width: 400px;
+  width:400px;
   margin: auto 0;
 }
 
