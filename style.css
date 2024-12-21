@@ -11,6 +11,10 @@
 looks like all black symbols didnt invert
 */
 
+.icon {
+  font-size: 32px;
+}
+
 body {
   font-family: "Arvo", serif;
   filter: invert(100%);
