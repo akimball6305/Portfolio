@@ -1,4 +1,3 @@
-About This Portfolio
 Welcome to my portfolio! I'm Aiden, a computer science major passionate about game design, software development, and machine learning. This site showcases my projects, skills, and experiences, giving you a glimpse into what I do and where I aim to go in my career.
 
 What You’ll Find Here:
