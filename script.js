@@ -5,9 +5,9 @@ function toggleMenu() {
     icon.classList.toggle("open")
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll("a").forEach(link => {
-        link.setAttribute("target", "_blank");
-    });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelectorAll("a").forEach(link => {
+//         link.setAttribute("target", "_blank");
+//     });
+// });
 
