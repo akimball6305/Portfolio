@@ -1,226 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="website icon" type="png" href="Assets/portfolio-logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="website icon" type="png" href="Assets/Icons/portfolio-logo.png" />
   </head>
-    <body> 
-      <nav id="desktop-nav">
-        <div class="logo">Aiden Kimball</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Aiden Kimball</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aiden Kimball</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="showcase">
+      <p class="section__text__p1">Browse My Favorite</p>
+      <h1 class="title">Projects</h1>
+      <div class="about-containers">
+        <div id="showcase1" class="details-container color-container">
+          <div class="article-container">
+            <img src="Assets/ProjectCovers/Temple.PNG" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Temple Trials</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305/MicroJam-Ancient'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidenk6305.itch.io/temple-trials'">
+              Download
+            </button>
+          </div>
+        </div>
+        <div id="showcase2" class="details-container color-container">
+          <div class="article-container">
+            <img src="Assets/ProjectCovers/MAZEIcon.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Flux</h2>
+          <div class="btn-container">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305'">Github</button> -->
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidendevelops.com/'">Live Demo</button> -->
+          </div>
+        </div>
+        <div id="showcase3" class="details-container color-container">
+          <div class="article-container">
+              <img src="Assets/ProjectCovers/coverRedacted.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Redacted</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ZaneWallace20/Game_Jam'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidenk6305.itch.io/redacted'">
+                Download
+              </button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse All</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="Assets/ProjectCovers/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">My Portfolio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305/Portfolio'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidendevelops.com/'">
+                You're here!
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="Assets/ProjectCovers/rocket.PNG" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Galactic Trials</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305/Galactic-Trials'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidenk6305.itch.io/galactic-trials'">
+                Download
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="Assets/ProjectCovers/coverRedacted.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Redacted</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ZaneWallace20/Game_Jam'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidenk6305.itch.io/redacted'">
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Assets/ProjectCovers/Temple.PNG" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Temple Trials</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305/MicroJam-Ancient'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidenk6305.itch.io/temple-trials'">
+              Download
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Assets/ProjectCovers/questionmarkwhite.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TBD</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidendevelops.com/'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Assets/ProjectCovers/questionmarkwhite.png" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TBD</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akimball6305'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://aidendevelops.com/'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+      <img src="Assets/Icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="Assets/Icons/email1.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:aiden.kimball6305@gmail.com">aiden.kimball6305@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="Assets/Icons/linkedin1.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/aiden-kimball-496535281/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">Aiden Kimball</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-      </nav>
-        <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                        <img
-                            src="./assets/project-1.png"
-                            alt="Project 1"
-                            class="project-img"
-                        />
-                        </div>
-                        <h2 class="experience-sub-title project-title">My Portfolio</h2>
-                        <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/akimball6305/Portfolio'">
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://aidendevelops.com/'">
-                            You're here!
-                        </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                        <img
-                            src="./assets/rocket.PNG"
-                            alt="Project 2"
-                            class="project-img"
-                        />
-                        </div>
-                        <h2 class="experience-sub-title project-title">Galactic Trials</h2>
-                        <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/akimball6305/Galactic-Trials'">
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://aidenk6305.itch.io/galactic-trials'">
-                            Download
-                        </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                        <img
-                            src="./assets/coverRedacted.png"
-                            alt="Project 3"
-                            class="project-img"
-                        />
-                        </div>
-                        <h2 class="experience-sub-title project-title">Redacted</h2>
-                        <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/ZaneWallace20/Game_Jam'">
-                            Github
-                        </button>
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://aidenk6305.itch.io/redacted'">
-                            Download
-                        </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-containers">
-                    <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="Assets/Temple.PNG"
-                        alt="Project 4"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Temple Trials</h2>
-                    <div class="btn-container">
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/akimball6305/MicroJam-Ancient'">
-                        Github
-                        </button>
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://aidenk6305.itch.io/temple-trials'">
-                        Download
-                        </button>
-                    </div>
-                    </div>
-                    <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="Assets/questionmarkwhite.png"
-                        alt="Project 5"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">TBD</h2>
-                    <div class="btn-container">
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/akimball6305'">
-                        Github
-                        </button>
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://aidendevelops.com/'">
-                        Live Demo
-                        </button>
-                    </div>
-                    </div>
-                    <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="Assets/questionmarkwhite.png"
-                        alt="Project 6"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">TBD</h2>
-                    <div class="btn-container">
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/akimball6305'">
-                        Github
-                        </button>
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://aidendevelops.com/'">
-                        Live Demo
-                        </button>
-                    </div>
-                    </div>
-            </div>
-            </div>
-            
-            <img
-                src="./assets/arrow.png"
-                alt="Arrow icon"
-                class="icon arrow"
-                onclick="location.href='./#contact'"
-            />
-        </section>
-            <section id="contact">
-                <p class="section__text__p1">Get in Touch</p>
-                <h1 class="title">Contact Me</h1>
-                <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img
-                    src="./assets/email1.png"
-                    alt="Email icon"
-                    class="icon contact-icon email-icon"
-                    />
-                    <p><a href="mailto:aiden.kimball6305@gmail.com">aiden.kimball6305@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img
-                    src="./assets/linkedin1.png"
-                    alt="LinkedIn icon"
-                    class="icon contact-icon"
-                    />
-                    <p><a href="https://www.linkedin.com/in/aiden-kimball-496535281/">LinkedIn</a></p>
-                </div>
-                </div>
-            </section>
-            <footer>
-                <nav>
-                    <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    </div>
-                </nav>
-                <p>Copyright &#169; 2024 Aiden Kimball. All Rights Reserved.</p>
-            </footer>
-        <script src="script.js"></script>  
-    </body>
+      <p>Copyright &#169; 2024 Aiden Kimball. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
