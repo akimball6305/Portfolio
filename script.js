@@ -124,9 +124,3 @@ function resetAutoRotate() {
 
 // Initialize carousel when page loads
 document.addEventListener('DOMContentLoaded', initCarousel);
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     document.querySelectorAll("a").forEach(link => {
-//         link.setAttribute("target", "_blank");
-//     });
-// });
